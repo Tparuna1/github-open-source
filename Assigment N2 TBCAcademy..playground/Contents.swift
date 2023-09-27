@@ -16,18 +16,18 @@ print(number1 + number2)
 
 print("\n")
 
-let tockasAge = 24
+let numberOfPeople = 30
 
-if tockasAge > 10 && tockasAge <= 20 {
-    print("\(tockasAge) is more than 10 and less or equal to 20.")
-} else if tockasAge > 20 && tockasAge <= 50 {
-    print("\(tockasAge) is more than 20 and less or equal to 50.")
-} else if tockasAge > 50 && tockasAge <= 100 {
-    print("\(tockasAge) is more than 50 and less or equal to 100.")
-} else if tockasAge > 100 {
-    print("\(tockasAge) is more than 100.")
+if numberOfPeople > 10 && numberOfPeople <= 20 {
+    print("\(numberOfPeople) is more than 10 and less or equal to 20.")
+} else if numberOfPeople > 20 && numberOfPeople <= 50 {
+    print("\(numberOfPeople) is more than 20 and less or equal to 50.")
+} else if numberOfPeople > 50 && numberOfPeople <= 100 {
+    print("\(numberOfPeople) is more than 50 and less or equal to 100.")
+} else if numberOfPeople > 100 {
+    print("\(numberOfPeople) is more than 100.")
 } else {
-    print("\(tockasAge) is less than or equal to 10.")
+    print("\(numberOfPeople) is less than or equal to 10.")
 }
 
 
