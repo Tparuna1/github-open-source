@@ -12,6 +12,10 @@ final class CatFactsViewModel {
     var catFacts: [CatFact] = []
     var onUpdate: (() -> Void)?
     
+    func viewDidLoad() {
+        fetchCatFacts()
+    }
+    
     func fetchCatFacts() {
         let catFactURLString = "https://catfact.ninja/facts?limit=5"
         

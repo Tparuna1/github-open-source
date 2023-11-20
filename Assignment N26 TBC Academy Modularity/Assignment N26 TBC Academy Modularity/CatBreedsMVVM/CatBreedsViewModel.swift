@@ -11,6 +11,10 @@ import NetworkService
 class CatBreedsViewModel {
     var catBreeds: [CatBreed] = []
     var onUpdate: (() -> Void)?
+    
+    func viewDidLoad() {
+        fetchCatBreeds()
+    }
 
     func fetchCatBreeds() {
         let catBreedURLString = "https://catfact.ninja/breeds?limit=5"

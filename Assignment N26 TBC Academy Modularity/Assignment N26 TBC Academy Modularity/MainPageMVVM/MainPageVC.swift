@@ -20,7 +20,7 @@ final class MainPageVC: UIViewController {
                 self?.tableView.reloadData()
             }
         }
-        viewModel.fetchCatFacts()
+        viewModel.viewDidLoad()
     }
     
     private func setupNavigationBar() {

@@ -20,7 +20,7 @@ final class CatBreedsVC: UIViewController {
                 self?.tableView.reloadData()
             }
         }
-        viewModel.fetchCatBreeds()
+        viewModel.viewDidLoad()
     }
     
     private func setupNavigationBar() {
