@@ -19,7 +19,7 @@ class CatBreedsViewModel {
             switch result {
             case .success(let response):
                 self?.catBreeds = response.data
-                self?.onUpdate?() // Notify the view controller about the update
+                self?.onUpdate?()
             case .failure(let error):
                 print("Failed to fetch cat breeds: \(error.localizedDescription)")
             }
