@@ -11,16 +11,21 @@ final class MainPageVC: UIViewController {
     private let viewModel = CatFactsViewModel()
     private let tableView = UITableView()
     
+    //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupNavigationBar()
-        setupTableView()
+        SetupUI()
         viewModel.onUpdate = { [weak self] in
             DispatchQueue.main.async {
                 self?.tableView.reloadData()
             }
         }
         viewModel.viewDidLoad()
+    }
+    //MARK: - SetupUI
+    private func SetupUI() {
+        setupNavigationBar()
+        setupTableView()
     }
     
     private func setupNavigationBar() {
@@ -49,6 +54,7 @@ final class MainPageVC: UIViewController {
     }
 }
 
+//MARK: - UITableViewDataSource
 extension MainPageVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.catFacts.count
@@ -60,7 +66,7 @@ extension MainPageVC: UITableViewDataSource {
         cell.textLabel?.text = fact.fact
         cell.contentView.backgroundColor = UIColor.systemCyan
         return cell
-    }
+    } 
 }
 
 

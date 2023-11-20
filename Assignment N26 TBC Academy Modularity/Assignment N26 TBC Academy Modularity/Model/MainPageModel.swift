@@ -7,6 +7,7 @@
 
 import Foundation
 
+//MARK: - MainPageModel
 
 struct CatFact: Decodable {
     let fact: String

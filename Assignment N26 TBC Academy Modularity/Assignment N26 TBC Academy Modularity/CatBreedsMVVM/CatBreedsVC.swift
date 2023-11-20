@@ -13,14 +13,19 @@ final class CatBreedsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupNavigationBar()
-        setupTableView()
+        SetupUI()
         viewModel.onUpdate = { [weak self] in
             DispatchQueue.main.async {
                 self?.tableView.reloadData()
             }
         }
         viewModel.viewDidLoad()
+    }
+    
+    //MARK: - SetupUI
+    private func SetupUI() {
+        setupNavigationBar()
+        setupTableView()
     }
     
     private func setupNavigationBar() {
@@ -49,6 +54,7 @@ final class CatBreedsVC: UIViewController {
     }
 }
 
+//MARK: - UITableViewDataSource
 extension CatBreedsVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.catBreeds.count

@@ -7,6 +7,8 @@
 
 import Foundation
 
+//MARK: - CatBreedsModel
+
 struct CatBreed: Decodable {
     let breed: String
 }

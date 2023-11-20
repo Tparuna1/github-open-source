@@ -16,6 +16,7 @@ final class CatFactsViewModel {
         fetchCatFacts()
     }
     
+    //MARK: - Data Fetching
     private func fetchCatFacts() {
         let catFactURLString = "https://catfact.ninja/facts?limit=5"
         

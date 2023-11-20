@@ -16,6 +16,7 @@ class CatBreedsViewModel {
         fetchCatBreeds()
     }
 
+    //MARK: - Data Fetching
     private func fetchCatBreeds() {
         let catBreedURLString = "https://catfact.ninja/breeds?limit=5"
 
