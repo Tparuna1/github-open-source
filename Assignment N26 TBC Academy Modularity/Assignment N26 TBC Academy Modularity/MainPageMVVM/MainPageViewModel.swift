@@ -16,7 +16,7 @@ final class CatFactsViewModel {
         fetchCatFacts()
     }
     
-    func fetchCatFacts() {
+    private func fetchCatFacts() {
         let catFactURLString = "https://catfact.ninja/facts?limit=5"
         
         NetworkService.fetchData(from: catFactURLString) { [weak self] (result: Result<CatFactResponse, Error>) in

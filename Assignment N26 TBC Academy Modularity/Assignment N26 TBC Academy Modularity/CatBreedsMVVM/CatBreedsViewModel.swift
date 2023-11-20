@@ -16,7 +16,7 @@ class CatBreedsViewModel {
         fetchCatBreeds()
     }
 
-    func fetchCatBreeds() {
+    private func fetchCatBreeds() {
         let catBreedURLString = "https://catfact.ninja/breeds?limit=5"
 
         NetworkService.fetchData(from: catBreedURLString) { [weak self] (result: Result<CatBreedResponse, Error>) in
