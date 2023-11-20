@@ -50,7 +50,6 @@
 		418C093C2B0A96B700AC9F13 /* MainPageMVVM */ = {
 			isa = PBXGroup;
 			children = (
-				418C09382B0A969E00AC9F13 /* MainPageModel.swift */,
 				418C09362B0A969200AC9F13 /* MainPageVC.swift */,
 				418C093A2B0A96A700AC9F13 /* MainPageViewModel.swift */,
 			);
@@ -60,11 +59,19 @@
 		418C093E2B0B7AE800AC9F13 /* CatBreedsMVVM */ = {
 			isa = PBXGroup;
 			children = (
-				418C093F2B0B7B2D00AC9F13 /* CatBreedsModel.swift */,
 				418C09412B0B7B3900AC9F13 /* CatBreedsVC.swift */,
 				418C09432B0B7B4E00AC9F13 /* CatBreedsViewModel.swift */,
 			);
 			path = CatBreedsMVVM;
+			sourceTree = "<group>";
+		};
+		418C09452B0B845300AC9F13 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				418C09382B0A969E00AC9F13 /* MainPageModel.swift */,
+				418C093F2B0B7B2D00AC9F13 /* CatBreedsModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		41A904D12B0A83ED00F21C16 = {
@@ -88,6 +95,7 @@
 			children = (
 				41A904DD2B0A83EE00F21C16 /* AppDelegate.swift */,
 				41A904DF2B0A83EE00F21C16 /* SceneDelegate.swift */,
+				418C09452B0B845300AC9F13 /* Model */,
 				418C093C2B0A96B700AC9F13 /* MainPageMVVM */,
 				418C093E2B0B7AE800AC9F13 /* CatBreedsMVVM */,
 				41A904E62B0A83F000F21C16 /* Assets.xcassets */,
