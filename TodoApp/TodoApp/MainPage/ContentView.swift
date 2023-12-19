@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct TaskListView: View {
-    @ObservedObject var taskViewModel = MainPageViewModel()
-    @State private var newTaskTitle = ""
-    @State private var isAddingTask = false
+    var taskViewModel = MainPageViewModel()
+
+    
     
     var body: some View {
         NavigationView {
             VStack {
                 Spacer()
                 
-                Button(action: completeAllTasks) {
+                Button(action: taskViewModel.completeAllTasks) {
                     Text("Complete All")
                         .frame(maxWidth: .infinity)
                         .frame(height: 60)
@@ -25,8 +25,12 @@ struct TaskListView: View {
                         .font(.headline)
                         .background(
                             LinearGradient(
-                                gradient: Gradient(colors: [Color(red: 186/255, green: 131/255, blue: 222/255),
-                                                            Color(red: 222/255, green: 131/255, blue: 176/255)]),
+                                gradient: Gradient(colors: [Color(red: 186/255,
+                                                                  green: 131/255,
+                                                                  blue: 222/255),
+                                                            Color(red: 222/255,
+                                                                  green: 131/255,
+                                                                  blue: 176/255)]),
                                 startPoint: .leading,
                                 endPoint: .trailing
                             )
@@ -37,7 +41,10 @@ struct TaskListView: View {
                 
                 List {
                     Section(header: Text("Progress")) {
-                        // ... (Content for 'Progress' section)
+                        VStack{
+                            Text("You have \(taskViewModel.incompleteTasksCount()) tasks to Complete");                           ProgressView(value: taskViewModel.calculateCompletionProgress())
+                                .progressViewStyle(DarkBlueShadowProgressViewStyle())
+                        }
                     }
                     
                     Section(header: Text("Uncompleted Tasks")) {
@@ -45,7 +52,7 @@ struct TaskListView: View {
                             TaskRowView(
                                 viewModel: taskViewModel,
                                 task: task,
-                                sectionColor: generateSectionColor(isCompleted: false)
+                                sectionColor: taskViewModel.generateSectionColor(isCompleted: false)
                             )
                             .swipeActions {
                                 Button(role: .destructive) {
@@ -62,7 +69,7 @@ struct TaskListView: View {
                             TaskRowView(
                                 viewModel: taskViewModel,
                                 task: task,
-                                sectionColor: generateSectionColor(isCompleted: true)
+                                sectionColor: taskViewModel.generateSectionColor(isCompleted: true)
                             )
                             .swipeActions {
                                 Button(role: .destructive) {
@@ -79,64 +86,67 @@ struct TaskListView: View {
                 .padding()
                 
                 HStack {
-                    TextField("Enter task", text: $newTaskTitle)
+                    TextField("Enter task", text: $taskViewModel.newTaskTitle)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                     
-                    Button(action: addTask) {
+                    Button(action: taskViewModel.addTask) {
                         Text("Add")
                     }
                 }
                 .padding()
             }
             .navigationBarItems(
-                            leading: Text("You have \(incompleteTasksCount()) tasks to Complete"),
-                            trailing:
-                                VStack {
-                                    NavigationLink(destination: ProfilePage()) {
-                                        Image("Luffy2")
-                                            .resizable()
-                                            .frame(width: 45, height: 45)
-                                            .clipShape(Circle())
-                                    }
-                                    .overlay(
-                                        Text("\(incompleteTasksCount())")
-                                            .foregroundColor(.white)
-                                            .frame(width: 20, height: 20)
-                                            .background(Color.pink)
-                                            .clipShape(Circle())
-                                            .offset(x: 25, y: 15)
-                                    )
-                                }
+//                leading: Text("You have \(taskViewModel.incompleteTasksCount()) tasks to Complete"),
+                trailing:
+                    VStack {
+                        NavigationLink(destination: ProfilePage()) {
+                            Image("Luffy2")
+                                .resizable()
+                                .frame(width: 45, height: 45)
+                                .clipShape(Circle())
+                        }
+                        .overlay(
+                            Text("\(taskViewModel.incompleteTasksCount())")
+                                .foregroundColor(.white)
+                                .frame(width: 20, height: 20)
+                                .background(Color.pink)
+                                .clipShape(Circle())
+                                .offset(x: 25, y: 15)
                         )
                     }
-                }
-    func completeAllTasks() {
-        taskViewModel.tasks.indices.forEach { index in
-            taskViewModel.tasks[index].completed = true
-        }
-        taskViewModel.saveTasks()
-    }
-    
-    func addTask() {
-        if !newTaskTitle.isEmpty {
-            taskViewModel.addTask(title: newTaskTitle)
-            newTaskTitle = ""
+            )
         }
     }
     
-    func incompleteTasksCount() -> Int {
-        return taskViewModel.tasks.filter { !$0.completed }.count
-    }
-    func generateSectionColor(isCompleted: Bool) -> Color {
-            return isCompleted ? Color.blue : Color.pink
+}
+
+struct DarkBlueShadowProgressViewStyle: ProgressViewStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        ProgressView(configuration)
+            .shadow(color: Color(red: 0, green: 0, blue: 0.6), radius: 4.0, x: 1.0, y: 2.0)
+            .tint(
+                LinearGradient(
+                    gradient: Gradient(colors: [Color(red: 186/255,
+                                                      green: 131/255,
+                                                      blue: 222/255),
+                                                Color(red: 222/255,
+                                                      green: 131/255,
+                                                      blue: 176/255)]),
+                    startPoint: .leading,
+                    endPoint: .trailing
+                )
+            )
+            .padding(.horizontal, 20)
+            .frame(height: 20)
+            .cornerRadius(10)
     }
 }
 
-
 struct TaskRowView: View {
-    @ObservedObject var viewModel: MainPageViewModel
+    @State var viewModel: MainPageViewModel
     var task: MainPageModel
     var sectionColor: Color
+
     
     var body: some View {
         HStack {

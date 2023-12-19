@@ -16,7 +16,7 @@ struct MainPageButton: View {
     
     var body: some View {
         NavigationLink(destination: ContentView()) {
-            Button("Go to Main Screen") {
+            Button("Main Page") {
                 path = NavigationPath()
             }
             .padding()

@@ -15,15 +15,7 @@ struct ProfilePage: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Edit Profile")
-                    .font(.headline)
-                    .fontWeight(.bold)
-                    .foregroundColor(.primary)
-                    .navigationBarTitleDisplayMode(.inline)
-                    .navigationBarItems(trailing: EmptyView())
-                
-                
-                Image("AIGen")
+                Image("Luffy2")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 150, height: 150)
@@ -31,7 +23,7 @@ struct ProfilePage: View {
                     .overlay(Circle().stroke(Color.white, lineWidth: 4))
                     .overlay(
                         ZStack {
-                            Image("Cam")
+                            Image(systemName:"camera.fill")
                                 .foregroundColor(.white)
                                 .onTapGesture {
                                     
