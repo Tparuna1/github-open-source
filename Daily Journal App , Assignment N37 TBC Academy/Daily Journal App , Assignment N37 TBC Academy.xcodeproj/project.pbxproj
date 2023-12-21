@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41809E1A2B32E9AD00C44046 /* Daily_Journal_App___Assignment_N37_TBC_AcademyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41809E192B32E9AD00C44046 /* Daily_Journal_App___Assignment_N37_TBC_AcademyApp.swift */; };
+		41809E1E2B32E9AF00C44046 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41809E1D2B32E9AF00C44046 /* Assets.xcassets */; };
+		41809E212B32E9AF00C44046 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41809E202B32E9AF00C44046 /* Preview Assets.xcassets */; };
+		41809E282B32EB3F00C44046 /* DailyNewsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41809E272B32EB3F00C44046 /* DailyNewsScene.swift */; };
+		41809E2B2B32EB7E00C44046 /* DailyNewsSceneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41809E2A2B32EB7E00C44046 /* DailyNewsSceneViewModel.swift */; };
+		41809E2D2B32ED0E00C44046 /* DailyNewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41809E2C2B32ED0E00C44046 /* DailyNewsModel.swift */; };
+		41809E302B32F1C300C44046 /* AddArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41809E2F2B32F1C300C44046 /* AddArticleView.swift */; };
+		41809E362B33002400C44046 /* FavouritesPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41809E352B33002400C44046 /* FavouritesPageView.swift */; };
+		41809E382B33083C00C44046 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41809E372B33083C00C44046 /* TabView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		41809E162B32E9AD00C44046 /* Daily Journal App , Assignment N37 TBC Academy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily Journal App , Assignment N37 TBC Academy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41809E192B32E9AD00C44046 /* Daily_Journal_App___Assignment_N37_TBC_AcademyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Daily_Journal_App___Assignment_N37_TBC_AcademyApp.swift"; sourceTree = "<group>"; };
+		41809E1D2B32E9AF00C44046 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41809E202B32E9AF00C44046 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		41809E272B32EB3F00C44046 /* DailyNewsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyNewsScene.swift; sourceTree = "<group>"; };
+		41809E2A2B32EB7E00C44046 /* DailyNewsSceneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyNewsSceneViewModel.swift; sourceTree = "<group>"; };
+		41809E2C2B32ED0E00C44046 /* DailyNewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyNewsModel.swift; sourceTree = "<group>"; };
+		41809E2F2B32F1C300C44046 /* AddArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddArticleView.swift; sourceTree = "<group>"; };
+		41809E352B33002400C44046 /* FavouritesPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesPageView.swift; sourceTree = "<group>"; };
+		41809E372B33083C00C44046 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41809E132B32E9AD00C44046 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41809E0D2B32E9AD00C44046 = {
+			isa = PBXGroup;
+			children = (
+				41809E182B32E9AD00C44046 /* Daily Journal App , Assignment N37 TBC Academy */,
+				41809E172B32E9AD00C44046 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		41809E172B32E9AD00C44046 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41809E162B32E9AD00C44046 /* Daily Journal App , Assignment N37 TBC Academy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41809E182B32E9AD00C44046 /* Daily Journal App , Assignment N37 TBC Academy */ = {
+			isa = PBXGroup;
+			children = (
+				41809E192B32E9AD00C44046 /* Daily_Journal_App___Assignment_N37_TBC_AcademyApp.swift */,
+				41809E372B33083C00C44046 /* TabView.swift */,
+				41809E342B33001600C44046 /* FavouritesPage */,
+				41809E332B32FE5300C44046 /* Model */,
+				41809E2E2B32F1AB00C44046 /* AddArticlePage */,
+				41809E292B32EB6500C44046 /* DailyNewsScene */,
+				41809E1D2B32E9AF00C44046 /* Assets.xcassets */,
+				41809E1F2B32E9AF00C44046 /* Preview Content */,
+			);
+			path = "Daily Journal App , Assignment N37 TBC Academy";
+			sourceTree = "<group>";
+		};
+		41809E1F2B32E9AF00C44046 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				41809E202B32E9AF00C44046 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		41809E292B32EB6500C44046 /* DailyNewsScene */ = {
+			isa = PBXGroup;
+			children = (
+				41809E272B32EB3F00C44046 /* DailyNewsScene.swift */,
+				41809E2A2B32EB7E00C44046 /* DailyNewsSceneViewModel.swift */,
+			);
+			path = DailyNewsScene;
+			sourceTree = "<group>";
+		};
+		41809E2E2B32F1AB00C44046 /* AddArticlePage */ = {
+			isa = PBXGroup;
+			children = (
+				41809E2F2B32F1C300C44046 /* AddArticleView.swift */,
+			);
+			path = AddArticlePage;
+			sourceTree = "<group>";
+		};
+		41809E332B32FE5300C44046 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				41809E2C2B32ED0E00C44046 /* DailyNewsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		41809E342B33001600C44046 /* FavouritesPage */ = {
+			isa = PBXGroup;
+			children = (
+				41809E352B33002400C44046 /* FavouritesPageView.swift */,
+			);
+			path = FavouritesPage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41809E152B32E9AD00C44046 /* Daily Journal App , Assignment N37 TBC Academy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41809E242B32E9AF00C44046 /* Build configuration list for PBXNativeTarget "Daily Journal App , Assignment N37 TBC Academy" */;
+			buildPhases = (
+				41809E122B32E9AD00C44046 /* Sources */,
+				41809E132B32E9AD00C44046 /* Frameworks */,
+				41809E142B32E9AD00C44046 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Daily Journal App , Assignment N37 TBC Academy";
+			productName = "Daily Journal App , Assignment N37 TBC Academy";
+			productReference = 41809E162B32E9AD00C44046 /* Daily Journal App , Assignment N37 TBC Academy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41809E0E2B32E9AD00C44046 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					41809E152B32E9AD00C44046 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = 41809E112B32E9AD00C44046 /* Build configuration list for PBXProject "Daily Journal App , Assignment N37 TBC Academy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 41809E0D2B32E9AD00C44046;
+			productRefGroup = 41809E172B32E9AD00C44046 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41809E152B32E9AD00C44046 /* Daily Journal App , Assignment N37 TBC Academy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41809E142B32E9AD00C44046 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41809E212B32E9AF00C44046 /* Preview Assets.xcassets in Resources */,
+				41809E1E2B32E9AF00C44046 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41809E122B32E9AD00C44046 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41809E2D2B32ED0E00C44046 /* DailyNewsModel.swift in Sources */,
+				41809E362B33002400C44046 /* FavouritesPageView.swift in Sources */,
+				41809E282B32EB3F00C44046 /* DailyNewsScene.swift in Sources */,
+				41809E302B32F1C300C44046 /* AddArticleView.swift in Sources */,
+				41809E382B33083C00C44046 /* TabView.swift in Sources */,
+				41809E2B2B32EB7E00C44046 /* DailyNewsSceneViewModel.swift in Sources */,
+				41809E1A2B32E9AD00C44046 /* Daily_Journal_App___Assignment_N37_TBC_AcademyApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		41809E222B32E9AF00C44046 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		41809E232B32E9AF00C44046 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41809E252B32E9AF00C44046 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Daily Journal App , Assignment N37 TBC Academy/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "TockProducts.Daily-Journal-App---Assignment-N37-TBC-Academy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		41809E262B32E9AF00C44046 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Daily Journal App , Assignment N37 TBC Academy/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "TockProducts.Daily-Journal-App---Assignment-N37-TBC-Academy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41809E112B32E9AD00C44046 /* Build configuration list for PBXProject "Daily Journal App , Assignment N37 TBC Academy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41809E222B32E9AF00C44046 /* Debug */,
+				41809E232B32E9AF00C44046 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41809E242B32E9AF00C44046 /* Build configuration list for PBXNativeTarget "Daily Journal App , Assignment N37 TBC Academy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41809E252B32E9AF00C44046 /* Debug */,
+				41809E262B32E9AF00C44046 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 41809E0E2B32E9AD00C44046 /* Project object */;
+}

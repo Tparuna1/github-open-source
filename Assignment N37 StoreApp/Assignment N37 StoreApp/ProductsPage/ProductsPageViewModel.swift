@@ -79,6 +79,7 @@ class ProductsViewModel: ObservableObject {
                 DispatchQueue.main.async {
                     self.products = response.products
                     self.extractCategories()
+                    print("XXX")
                 }
             case .failure(let error):
                 print("Failed to fetch products: \(error.localizedDescription)")
