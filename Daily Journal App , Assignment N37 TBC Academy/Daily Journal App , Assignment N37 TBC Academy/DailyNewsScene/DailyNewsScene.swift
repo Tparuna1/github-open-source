@@ -44,7 +44,7 @@ struct DailyNewsScene: View {
                 .overlay(Group{
                     if journalViewModel.entries.isEmpty{
                         NavigationLink(destination: AddArticleView(journalViewModel: journalViewModel)) {
-                            Text("Add Your First Article")
+                            Text("დაწერ რამეს?!")
                         }
                     }
                 })

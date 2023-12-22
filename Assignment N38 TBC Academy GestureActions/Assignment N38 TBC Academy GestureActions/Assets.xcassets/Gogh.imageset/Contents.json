@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "the-worlds-greatest-painters-season-1-vincent-van-gogh642e90f384dd7-1024x576.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
