@@ -7,22 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3981AE582B3E29E3001917C9 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3981AE572B3E29E3001917C9 /* ContentViewModel.swift */; };
+		3981AE5A2B3E2A67001917C9 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3981AE592B3E2A67001917C9 /* Artwork.swift */; };
+		3981AE5C2B3E2A7F001917C9 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3981AE5B2B3E2A7F001917C9 /* View+Extension.swift */; };
 		41809E482B35D11800C44046 /* Assignment_N38_TBC_Academy_GestureActionsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41809E472B35D11800C44046 /* Assignment_N38_TBC_Academy_GestureActionsApp.swift */; };
 		41809E4A2B35D11800C44046 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41809E492B35D11800C44046 /* ContentView.swift */; };
 		41809E4C2B35D11B00C44046 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41809E4B2B35D11B00C44046 /* Assets.xcassets */; };
 		41809E4F2B35D11B00C44046 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41809E4E2B35D11B00C44046 /* Preview Assets.xcassets */; };
 		41809E582B35DBC300C44046 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41809E572B35DBC300C44046 /* Audio.swift */; };
-		41809E5A2B35E20300C44046 /* Goat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41809E592B35E20300C44046 /* Goat.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3981AE572B3E29E3001917C9 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		3981AE592B3E2A67001917C9 /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
+		3981AE5B2B3E2A7F001917C9 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		3981AE602B3E2AB1001917C9 /* Goat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Goat.mp3; path = ../../../../../../Downloads/Goat.mp3; sourceTree = "<group>"; };
 		41809E442B35D11800C44046 /* Assignment N38 TBC Academy GestureActions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Assignment N38 TBC Academy GestureActions.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41809E472B35D11800C44046 /* Assignment_N38_TBC_Academy_GestureActionsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment_N38_TBC_Academy_GestureActionsApp.swift; sourceTree = "<group>"; };
 		41809E492B35D11800C44046 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		41809E4B2B35D11B00C44046 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41809E4E2B35D11B00C44046 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		41809E572B35DBC300C44046 /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
-		41809E592B35E20300C44046 /* Goat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Goat.mp3; path = ../../../../Downloads/Goat.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +41,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3981AE532B3E2603001917C9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				41809E472B35D11800C44046 /* Assignment_N38_TBC_Academy_GestureActionsApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3981AE542B3E2614001917C9 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3981AE562B3E264A001917C9 /* ContentView */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3981AE552B3E2629001917C9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3981AE5B2B3E2A7F001917C9 /* View+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3981AE562B3E264A001917C9 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				41809E492B35D11800C44046 /* ContentView.swift */,
+				3981AE572B3E29E3001917C9 /* ContentViewModel.swift */,
+				3981AE592B3E2A67001917C9 /* Artwork.swift */,
+			);
+			path = ContentView;
+			sourceTree = "<group>";
+		};
+		3981AE5D2B3E2A99001917C9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3981AE5F2B3E2AAC001917C9 /* Audio */,
+				3981AE5E2B3E2AA2001917C9 /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3981AE5E2B3E2AA2001917C9 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				41809E4B2B35D11B00C44046 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		3981AE5F2B3E2AAC001917C9 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				41809E572B35DBC300C44046 /* Audio.swift */,
+				3981AE602B3E2AB1001917C9 /* Goat.mp3 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
 		41809E3B2B35D11700C44046 = {
 			isa = PBXGroup;
 			children = (
@@ -55,11 +120,10 @@
 		41809E462B35D11800C44046 /* Assignment N38 TBC Academy GestureActions */ = {
 			isa = PBXGroup;
 			children = (
-				41809E472B35D11800C44046 /* Assignment_N38_TBC_Academy_GestureActionsApp.swift */,
-				41809E492B35D11800C44046 /* ContentView.swift */,
-				41809E572B35DBC300C44046 /* Audio.swift */,
-				41809E4B2B35D11B00C44046 /* Assets.xcassets */,
-				41809E592B35E20300C44046 /* Goat.mp3 */,
+				3981AE532B3E2603001917C9 /* App */,
+				3981AE542B3E2614001917C9 /* Scenes */,
+				3981AE552B3E2629001917C9 /* Extension */,
+				3981AE5D2B3E2A99001917C9 /* Resources */,
 				41809E4D2B35D11B00C44046 /* Preview Content */,
 			);
 			path = "Assignment N38 TBC Academy GestureActions";
@@ -132,7 +196,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				41809E4F2B35D11B00C44046 /* Preview Assets.xcassets in Resources */,
-				41809E5A2B35E20300C44046 /* Goat.mp3 in Resources */,
 				41809E4C2B35D11B00C44046 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,8 +207,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3981AE5A2B3E2A67001917C9 /* Artwork.swift in Sources */,
+				3981AE582B3E29E3001917C9 /* ContentViewModel.swift in Sources */,
 				41809E582B35DBC300C44046 /* Audio.swift in Sources */,
 				41809E4A2B35D11800C44046 /* ContentView.swift in Sources */,
+				3981AE5C2B3E2A7F001917C9 /* View+Extension.swift in Sources */,
 				41809E482B35D11800C44046 /* Assignment_N38_TBC_Academy_GestureActionsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +353,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,6 +382,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

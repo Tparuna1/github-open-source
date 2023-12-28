@@ -5,10 +5,9 @@
 //  Created by tornike <parunashvili on 22.12.23.
 //
 
-import Foundation
 import AVFoundation
 
-class AudioPlayer {
+final class AudioPlayer {
     static var audioPlayer: AVAudioPlayer?
 
     static func playSound(fileName: String, fileExtension: String) {
